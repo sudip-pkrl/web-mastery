@@ -1,0 +1,45 @@
+/* 1 */
+
+a:link{
+    color: aqua;
+}
+a:hover{
+    color:aquamarine;
+    font-size: 1.1em;
+}
+a:active{
+    color: red;
+    font-size: 1.1em;
+}
+a:visited{
+    color: green;
+}
+
+
+/* v1 */
+
+li:hover{
+    background-color: aqua;
+}
+li:not(:hover){
+    background-color: aquamarine;
+}
+li:nth-child(2){
+    background-color: red;
+}
+
+
+/* v2 */
+
+div:hover{
+    background-color: aqua;
+}
+
+#greeting p{
+    background-color: aquamarine;
+    padding: 10px;
+    display: none;
+}
+#greeting:hover p{
+    display: block;
+}
