@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: aqua;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: aquamarine;
+}
