@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #0f172a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+/* Dashboard Card */
+.card {
+  width: 380px;
+
+  background: #0f172a;
+
+  border: 2px dashed #334155;
+  border-radius: 18px;
+
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* Title */
+.title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 28px;
+  font-weight: bold;
+
+  color: aqua;
+}
+
+/* Subtitle */
+.subtitle {
+  color: aquamarine;
+  font-size: 14px;
+}
+
+/* Menu Layout */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Menu Items */
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  background: aqua;
+
+  border: 2px solid transparent;
+  border-radius: 12px;
+
+  padding: 14px 16px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+/* Hover Effect */
+.menu-item:hover {
+  background: #0f172a;
+  color: aqua;
+
+  transform: translateX(6px);
+
+  border-color: aquamarine;
+}
+
+/* Icons */
+i {
+  width: 22px;
+  height: 22px;
+}

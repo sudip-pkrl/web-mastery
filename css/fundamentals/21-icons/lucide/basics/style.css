@@ -1,0 +1,62 @@
+.icons{
+    text-align: center;
+}
+
+.icons a{
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+[data-lucide="layout-dashboard"]{
+    color: aqua;
+    width: 80px;
+    height: 80px;
+}
+[data-lucide="layout-dashboard"]:hover{
+    color: aquamarine;
+}
+
+[data-lucide="home"]{
+    color: aqua;
+    width: 80px;
+    height: 80px;
+}
+[data-lucide="home"]:hover{
+    color: black;
+}
+
+[data-lucide="user"]{
+    color: aqua;
+    width: 80px;
+    height: 80px;
+}
+[data-lucide="user"]:hover{
+    color: black;
+}
+
+[data-lucide="settings"]{
+    color: aqua;
+    width: 80px;
+    height: 80px;
+}
+[data-lucide="settings"]:hover{
+    color: black;
+}
+
+[data-lucide="log-out"]{
+    color: aqua;
+    width: 80px;
+    height: 80px;
+}
+[data-lucide="log-out"]:hover{
+    color: black;
+}
+
+[data-lucide="heart"]{
+    color: aqua;
+    width: 80px;
+    height: 80px;
+}
+[data-lucide="heart"]:hover{
+    color: red;
+}
