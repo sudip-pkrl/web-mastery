@@ -1,0 +1,184 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* wrapper for left/right spacing */
+
+.wrapper {
+  width: 85%;
+
+  max-width: 1400px;
+
+  margin: auto;
+
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+/* main heading */
+
+h1 {
+  text-align: center;
+
+  color: aqua;
+
+  margin-bottom: 60px;
+
+  font-size: 3rem;
+}
+
+/* sections */
+
+section {
+  margin-bottom: 90px;
+}
+
+/* sub headings */
+
+h2 {
+  color: aquamarine;
+
+  margin-bottom: 20px;
+}
+
+/* common grid containers */
+
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5 {
+
+  min-height: 220px;
+
+  display: grid;
+
+  border: 2px dashed #334155;
+
+  border-radius: 10px;
+
+  margin-top: 20px;
+
+  padding: 20px;
+
+  gap: 20px;
+}
+
+/* common boxes */
+
+.box,
+.center-box {
+
+  background: aqua;
+
+  color: #001b1b;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+
+  transition: transform 0.3s ease;
+}
+
+/* hover effect */
+
+.box:hover,
+.center-box:hover {
+  transform: scale(1.05);
+}
+
+/* normal boxes */
+
+.box {
+  height: 100px;
+
+  font-size: 22px;
+}
+
+/* center box */
+
+.center-box {
+  width: 120px;
+  height: 120px;
+}
+
+/* 1 Basic Grid */
+
+.grid1 {
+
+  grid-template-columns:
+    100px 100px 100px;
+}
+
+/* 2 Equal Columns */
+
+.grid2 {
+
+  grid-template-columns:
+    repeat(3, 1fr);
+}
+
+/* 3 Responsive Grid */
+
+.grid3 {
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* 4 Center Grid */
+
+.grid4 {
+  place-items: center;
+}
+
+/* 5 Grid Layout */
+
+.grid5 {
+
+  grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+
+  grid-template-columns:
+    1fr 2fr 2fr;
+}
+
+/* layout boxes */
+
+.header {
+  grid-area: header;
+  height: 60px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: 150px;
+}
+
+.main {
+  grid-area: main;
+  height: 150px;
+}
+
+.footer {
+  grid-area: footer;
+  height: 60px;
+}
