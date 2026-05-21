@@ -1,0 +1,113 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: aqua;
+  line-height: 1.6;
+}
+
+/* header */
+header {
+  background: aquamarine;
+  color: #0f172a;
+  padding: 20px;
+  text-align: center;
+}
+
+/* container */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* hero */
+.hero {
+  background: aqua;
+  color: #0f172a;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* hero title */
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* hero text */
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* boxes */
+.boxes {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* box */
+.box {
+  flex: 1 1 250px;
+  background: lightgreen;
+  color: #0f172a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* box title */
+.box h3 {
+  margin-bottom: 10px;
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #0f172a;
+  color: aqua;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid aquamarine;
+  font-weight: bold;
+}
+
+/* button hover */
+.btn:hover {
+  background: aquamarine;
+  color: #0f172a;
+  border: 1px solid #0f172a;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background: aquamarine;
+  color: #0f172a;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .boxes {
+    flex-direction: column;
+  }
+}
