@@ -1,0 +1,319 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  padding: 40px;
+}
+
+/* main heading */
+
+h1 {
+  text-align: center;
+  color: aqua;
+  margin-bottom: 60px;
+  font-size: 3rem;
+}
+
+/* sections */
+
+section {
+  margin-bottom: 90px;
+}
+
+/* sub headings */
+
+h2 {
+  color: aquamarine;
+  margin-bottom: 20px;
+}
+
+/* common container */
+
+.container,
+.perspective {
+  min-height: 220px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px dashed #334155;
+
+  border-radius: 10px;
+
+  margin-top: 20px;
+}
+
+/* common box */
+
+.box {
+  width: 130px;
+  height: 130px;
+
+  background: aqua;
+  color: #001b1b;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+
+  transition: transform 0.5s ease;
+}
+
+/* translate */
+
+.translate-box:hover {
+  transform: translate(100px, 40px);
+}
+
+/* scale */
+
+.scale-box:hover {
+  transform: scale(1.5);
+}
+
+/* rotate */
+
+.rotate-box:hover {
+  transform: rotate(360deg);
+}
+
+/* skew */
+
+.skew-box:hover {
+  transform: skew(20deg, 10deg);
+}
+
+/* multiple transforms */
+
+.multi-box:hover {
+  transform:
+    translateX(50px)
+    rotate(20deg)
+    scale(1.2);
+}
+
+/* transform origin */
+
+.origin-box {
+  transform-origin: top left;
+}
+
+.origin-box:hover {
+  transform: rotate(45deg);
+}
+
+/* perspective */
+
+.perspective {
+  perspective: 1000px;
+}
+
+.rotate3d-box:hover {
+  transform: rotateY(180deg);
+}
+
+/* card flip */
+
+.card-wrapper {
+  width: 220px;
+  height: 220px;
+
+  perspective: 1000px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  transform-style: preserve-3d;
+
+  transition: transform 1s;
+}
+
+.card-wrapper:hover .card {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background: aqua;
+  color: #001b1b;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/* floating animation */
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-box {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* button */
+
+.magic-btn {
+  padding: 15px 30px;
+
+  background: aqua;
+  color: #001b1b;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.magic-btn:hover {
+  background: aquamarine;
+
+  transform:
+    scale(1.1)
+    rotate(-2deg);
+}
+
+/* grid */
+
+.grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(150px, 1fr));
+
+  gap: 30px;
+
+  padding: 30px;
+
+  margin-top: 30px;
+
+  border: 2px dashed #334155;
+  border-radius: 10px;
+}
+
+/* mini boxes */
+
+.mini-box {
+  height: 120px;
+
+  background: aqua;
+  color: #001b1b;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+
+  transition: transform 0.5s ease;
+}
+
+/* transform examples */
+
+.tx:hover {
+  transform: translateX(50px);
+}
+
+.ty:hover {
+  transform: translateY(-30px);
+}
+
+.sx:hover {
+  transform: scaleX(1.8);
+}
+
+.sy:hover {
+  transform: scaleY(0.5);
+}
+
+.rx:hover {
+  transform: rotateX(180deg);
+}
+
+.ry:hover {
+  transform: rotateY(180deg);
+}
+
+.rz:hover {
+  transform: rotateZ(45deg);
+}
+
+.skx:hover {
+  transform: skewX(20deg);
+}
+
+.sky:hover {
+  transform: skewY(20deg);
+}
+
+.t3d:hover {
+  transform: translate3d(40px, 0, 100px);
+}
+
+.r3d:hover {
+  transform: rotate3d(1, 1, 0, 45deg);
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  margin-top: 80px;
+  color: aqua;
+}
