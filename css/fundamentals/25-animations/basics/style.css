@@ -1,0 +1,29 @@
+#box{
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    font-size: 15em;
+    text-align: center;
+    animation-name: shrink;
+    animation-duration: 1s;
+}
+
+@keyframes slideLeft{
+    from{transform: translateX(200%)}
+}
+
+@keyframes rotate{
+    100%{transform: rotateX(360deg)}
+}
+
+@keyframes grow{
+    50%{transform: scale(2, 2)}
+}
+
+@keyframes shrink{
+    50%{transform: scale(0.5,0.5)}
+}
+
+@keyframes fade{
+    50%{opacity: 0}
+}
