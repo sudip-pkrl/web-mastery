@@ -13,7 +13,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     background: #0f172a;
-    color: white;
+    color: aqua;
     line-height: 1.6;
 }
 
@@ -48,12 +48,12 @@ section {
 /* demo box */
 .demo {
     min-height: 250px;
-    border: 1px dashed #334155;
-    border-radius: 14px;
+    border: 2px dashed #334155;
+    border-radius: 12px;
     margin-top: 20px;
     padding: 30px;
     overflow: hidden;
-    background: #111827;
+    background: #0f172a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +104,7 @@ section {
 /* NAVBAR */
 .navbar {
     width: 100%;
-    background: #1e293b;
+    background: #0f172a;
     padding: 18px 25px;
     border-radius: 12px;
     display: flex;
@@ -115,9 +115,11 @@ section {
 }
 
 .logo {
-    font-size: 28px;
     font-weight: bold;
-    color: aqua;
+    color:#0f172a;
+    background: aqua;
+    padding: 6px 12px;
+    border-radius: 6px;
 }
 
 .nav-links {
@@ -128,15 +130,16 @@ section {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
-    padding: 10px 14px;
-    border-radius: 8px;
-    transition: 0.3s;
+    color: aqua;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.25s ease;
 }
 
 .nav-links a:hover {
-    background: rgba(0,255,255,0.15);
-    color: aqua;
+    background: aquamarine;
+    color: #0f172a;
 }
 
 /* CARDS */
@@ -170,7 +173,7 @@ section {
 }
 
 .card-content p {
-    color: #cbd5e1;
+    color: aquamarine;
     font-size: 0.95rem;
 }
 
@@ -292,6 +295,10 @@ section {
     font-size: 46px;
     color: aqua;
     margin-bottom: 15px;
+}
+
+.hero-text p{
+    color: aquamarine;
 }
 
 .hero-image {
