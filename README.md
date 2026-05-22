@@ -100,8 +100,8 @@ The goal of this repo is to track my progress, organize resources, and build pro
 
 | Category  | Skill           | Status       | Notes |
 |-----------|-----------------|--------------|-------|
-| Frontend  | HTML            | Learning     |       |
-| Frontend  | CSS             | Learning     |       |
+| Frontend  | HTML            | In Progress  |       |
+| Frontend  | CSS             | In Progress  |       |
 | Frontend  | JavaScript      | Not Started  |       |
 | Frontend  | ReactJS         | Not Started  |       |
 | Frontend  | Tailwind CSS    | Not Started  |       |
@@ -113,8 +113,8 @@ The goal of this repo is to track my progress, organize resources, and build pro
 | Backend   | REST APIs       | Not Started  |       |
 | Databases | PostgreSQL      | Not Started  |       |
 | Databases | MongoDB         | Not Started  |       |
-| DevOps    | Git             | Not Started  |       |
-| DevOps    | GitHub          | Not Started  |       |
+| DevOps    | Git             | Learning     |       |
+| DevOps    | GitHub          | Learning     |       |
 | DevOps    | Docker          | Not Started  |       |
 | DevOps    | AWS             | Not Started  |       |
 | DevOps    | GitHub Actions  | Not Started  |       |
