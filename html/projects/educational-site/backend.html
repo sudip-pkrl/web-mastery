@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Development</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Backend Development</h1>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="python.html">Python</a> |
+            <a href="frontend.html">Frontend</a> |
+            <a href="backend.html">Backend</a> |
+            <a href="database.html">Database</a> |
+            <a href="deployment.html">Deployment</a> |
+            <a href="devops.html">DevOps</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="intro">
+
+            <h2>Introduction</h2>
+
+            <p>
+                Backend development handles the server-side logic of applications. <br><br>
+                It manages databases, authentication, APIs, business logic, and communication between frontend and databases. <br><br>
+                Python is widely used for backend development with frameworks like Django, FastAPI, and Flask.
+            </p>
+
+        </section>
+
+        <section id="frameworks">
+
+            <h2>Python Backend Frameworks</h2>
+
+            <p>
+                Python provides several powerful frameworks for backend development. <br><br>
+                Frameworks help developers build web applications faster by providing built-in features such as routing, database handling, security, and API support. <br><br>
+                The most popular Python backend frameworks are Django, FastAPI, and Flask.
+            </p>
+
+            <h3>Django</h3>
+
+            <p>
+                Django is a high-level Python web framework designed for building secure and scalable web applications. <br><br>
+                It follows the Model-View-Template (MVT) architecture, which separates database models, application logic, and user interface components. <br><br>
+                Django includes many built-in features such as authentication, an admin dashboard, database management, security protections, and URL routing. <br><br>
+                It is commonly used for large applications where developers need a complete framework with many features available out of the box.
+            </p>
+
+            <pre>
+                Example Django Project Structure:
+
+                project/
+                │
+                ├── models.py
+                ├── views.py
+                ├── urls.py
+                └── settings.py
+            </pre>
+
+            <h3>FastAPI</h3>
+
+            <p>
+                FastAPI is a modern Python framework mainly used for building fast and efficient APIs. <br><br>
+                It is based on Python type hints and provides automatic API documentation using OpenAPI and Swagger. <br><br>
+                FastAPI is designed for high-performance applications and works especially well for REST APIs, microservices, and machine learning backend services. <br><br>
+                It supports asynchronous programming, allowing applications to handle many requests efficiently.
+            </p>
+
+            <pre>
+                Example FastAPI Route:
+
+                from fastapi import FastAPI
+
+                app = FastAPI()
+
+                @app.get("/")
+                def home():
+                    return {"message": "Hello FastAPI"}
+            </pre>
+
+            <h3>Flask</h3>
+
+            <p>
+                Flask is a lightweight and flexible Python web framework. <br><br>
+                Unlike Django, Flask provides only the essential tools needed to build an application, allowing developers to choose additional libraries according to their requirements. <br><br>
+                Flask is simple to learn and is often used for small projects, prototypes, REST APIs, and applications where developers want more control over the project structure.
+            </p>
+
+            <pre>
+                Example Flask Application:
+
+                from flask import Flask
+
+                app = Flask(__name__)
+
+                @app.route("/")
+                def home():
+                    return "Hello Flask"
+            </pre>
+
+            <h3>Django vs FastAPI vs Flask</h3>
+
+            <ul>
+
+                <li>
+                    <strong>Django:</strong>
+                    Best for large full-featured web applications with built-in tools.
+                </li>
+
+                <li>
+                    <strong>FastAPI:</strong>
+                    Best for modern APIs, microservices, and high-performance applications.
+                </li>
+
+                <li>
+                    <strong>Flask:</strong>
+                    Best for small applications, learning projects, and flexible development.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section id="api">
+
+            <h2>APIs</h2>
+
+            <p>
+                API (Application Programming Interface) allows different applications to communicate with each other. <br><br>
+                REST APIs are commonly used for connecting frontend applications with backend servers.
+            </p>
+
+            <pre>
+                GET /users
+
+                POST /login
+            </pre>
+
+        </section>
+
+        <section id="authentication">
+
+            <h2>Authentication</h2>
+
+            <p>
+                Authentication verifies user identity. <br><br>
+                Common methods include passwords, tokens, JWT authentication, and OAuth.
+            </p>
+
+        </section>
+
+        <section id="resources">
+
+            <h2>Resources</h2>
+
+            <ul>
+
+                <li>
+                    <a href="https://www.djangoproject.com/" target="_blank">
+                        Django Official Site
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://fastapi.tiangolo.com/" target="_blank">
+                        FastAPI Documentation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://flask.palletsprojects.com/" target="_blank">
+                        Flask Documentation
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
